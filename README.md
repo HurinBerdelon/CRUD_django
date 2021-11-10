@@ -20,6 +20,7 @@ Create the VE
 Activate the VE
 <code> {name_of_VE}/Scripts/Activate</code>
 
+## Running the project
 
 With the virtual Environment created, run:
 <code> pip install -r requirements.txt</code>
