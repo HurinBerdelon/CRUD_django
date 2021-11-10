@@ -25,7 +25,7 @@ With the virtual Environment created, run:
 <code> pip install -r requirements.txt</code>
 
 With django installed, run the migrations to create the database:
-<code> python manage.py migrate </code
+<code> python manage.py migrate </code>
 
 Than, initiate the project with:
 <code> python manage.py runserver </code>
