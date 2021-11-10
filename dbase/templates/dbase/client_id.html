@@ -1,0 +1,24 @@
+{% extends 'dbase/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block main %}
+
+    <section>
+        <h2> Cliente id:  {{client.id}}</h2>
+        <p> <strong> Nome: </strong> {{client.name}}</p>
+        <p> <strong> Email: </strong> {{client.email}}</p>
+        <p> <strong> CPF: </strong> {{client.cpf}}</p>
+        <p> <strong> Data de Nascimento: </strong> {{client.birth}}</p>
+    </section>
+
+    <section>
+        <a href="{% url 'editar' client.id %}"> Editar </a>
+        <br>
+        
+        <form method='POST' action="">
+            {% csrf_token %}
+            <button type='submit'>Excluir</button>
+        </form>
+    </section>
+{% endblock %}

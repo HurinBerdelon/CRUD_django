@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %}{% endblock %} </title>
+</head>
+<body>
+    <header>
+        <h1>Exercícios de Requests e Manipulação de Banco de dados</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="{% url 'home' %}"> Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'clientes' %}"> Listar Clientes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>Made with Django Framework, <a href="https://github.com/HurinBerdelon"><i> by HurinBerdelon </i> </a> </p>
+    </footer>
+</body>
+</html>
